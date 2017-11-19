@@ -23,6 +23,7 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void setValues(){
+        buttons = new ArrayList<>();
         buttons.add(answerOne = itemView.findViewById(R.id.answer_one));
         buttons.add(answerTwo = itemView.findViewById(R.id.answer_two));
         buttons.add(answerThree = itemView.findViewById(R.id.answer_three));
@@ -33,7 +34,7 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
     public void updateValues(Quiz data){
         fQuestion.setText(data.getFocusQuestion());
         for(int i = 0; i < data.getOptions().size(); i ++ ) {
-            buttons.get(i).setText(data.getOption(i));
+            buttons.get(i).setText(data.getOptions(i));
         }
     }
     public void bind(Quiz data){

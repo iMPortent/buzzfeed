@@ -33,13 +33,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                 />
+                android:text="hey?" />
 
             <Button
                 android:id="@+id/answer_two"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="hey?"/>
 
         </LinearLayout>
 
@@ -53,13 +54,15 @@
                 android:id="@+id/answer_three"
                 android:layout_width="match_parent"
                 android:layout_height="0sp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="hey?"/>
 
             <Button
                 android:id="@+id/answer_four"
                 android:layout_width="match_parent"
                 android:layout_height="0sp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="hey?"/>
         </LinearLayout>
 
 

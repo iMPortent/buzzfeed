@@ -9,14 +9,25 @@ import java.util.*;
 public class Quiz {
 
     private String focusQuestion;
-    private ArrayList<String> qOptions;
+    private ArrayList<String> qOptions = new ArrayList();
 
+    public Quiz(){ }
+
+    public void setFocusQuestion(String focusQuestion){
+        this.focusQuestion = focusQuestion;
+    }
+
+    public void setOptions(String option) {
+        if (qOptions.size() < 4) {
+            qOptions.add(option);
+        }
+    }
     public String getFocusQuestion(){
         return focusQuestion;
     }
 
 
-    public String getOption(int position){
+    public String getOptions(int position){
         return qOptions.get(position);
     }
 
